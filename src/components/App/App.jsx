@@ -63,21 +63,39 @@ function App() {
   }
 
   const getFacesArray = () => {
-    let arr = [];
+    let arr = new Array(state.facesCount).fill();
 
-    for (let index = 0; index < state.facesCount; index++) {
-      arr.push({id: index + 1})
-    }
-
-    return arr;
+    return arr.map((element, index) => {
+      return { id: index + 1 }
+    })
   }
+
+  const facesArray = getFacesArray();
+
+  getFacesArray();
 
   return (
     <div className={styles.background}>
-      <FaceWrapper faceArray={getFacesArray()} activeFace={activeFaces.current} nextActiveFace={activeFaces.next} isAnimationStart={isAnimationStart} />
-      <Bottle onClick={handleRotateBottle} nextActiveFace={activeFaces.next} isAnimationStart={isAnimationStart} />
-      {isTimerStart && <Timer isTimerStart={isTimerStart}  isAnimationStart={isAnimationStart} />}
-      {isKissDisplay && <Kiss isAnimationStart={isAnimationStart} />}
+      <FaceWrapper
+        faceArray={facesArray}
+        activeFace={activeFaces.current}
+        nextActiveFace={activeFaces.next}
+        isAnimationStart={isAnimationStart}
+      />
+      <Bottle
+        onClick={handleRotateBottle}
+        nextActiveFace={activeFaces.next}
+        isAnimationStart={isAnimationStart}
+      />
+      {isTimerStart &&
+        <Timer
+          isTimerStart={isTimerStart}
+          isAnimationStart={isAnimationStart}
+        />
+      }
+      {isKissDisplay &&
+        <Kiss isAnimationStart={isAnimationStart} />
+      }
       <KissCounter kissCount={kissCount} />
     </div>
   );
