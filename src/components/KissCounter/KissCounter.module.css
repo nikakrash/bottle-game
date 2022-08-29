@@ -1,0 +1,40 @@
+.kiss_counter {
+  font-size: 30px;
+  color: yellow;
+  font-weight: bold;
+}
+
+.counter_wrapper {
+  position: absolute;
+  right: 100px;
+  top: 75px;
+  display: flex;
+  justify-content: center;
+  width: 90px;
+  height: 36px;
+  background: #8a8a8a6b;
+  box-shadow: 0 0 20px rgb(90 0 255);
+  -moz-box-shadow: 0 0 20px rgb(90 0 255);
+  -webkit-box-shadow: 0 0 20px rgb(90 0 255);
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .counter_wrapper {
+    right: 35px;
+    top: 30px;
+    width: 70px;
+    height: 30px;
+  }
+
+  .kiss_counter {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .counter_wrapper {
+    right: 50px;
+    top: 50px;
+  }
+}

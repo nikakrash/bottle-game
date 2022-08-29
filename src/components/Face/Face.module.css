@@ -1,0 +1,192 @@
+.face {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+.face_id_1 {
+  background: url('../../images/photos/1.png');
+}
+
+.face_id_2 {
+  background: url('../../images/photos/2.png');
+}
+
+.face_id_3 {
+  background: url('../../images/photos/3.png');
+}
+
+.face_id_4 {
+  background: url('../../images/photos/4.png');
+}
+
+.face_id_5 {
+  background: url('../../images/photos/5.png');
+}
+
+.face_id_6 {
+  background: url('../../images/photos/6.png');
+}
+
+.face_id_7 {
+  background: url('../../images/photos/7.png');
+}
+
+.face_id_8 {
+  background: url('../../images/photos/8.png');
+}
+
+.face_id_9 {
+  background: url('../../images/photos/9.png');
+}
+
+.face_id_10 {
+  background: url('../../images/photos/10.png');
+}
+
+.face_center {
+  background-size: cover;
+  background-position: center center;
+}
+
+.face_round {
+  border-radius: 50%;
+}
+
+.border_new_face {
+  position: absolute;
+}
+
+.border_new_face::after {
+  position: absolute;
+  content: '';
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  box-shadow: 0 0 20px rgb(90 0 255);
+  -moz-box-shadow: 0 0 20px rgb(90 0 255);
+  -webkit-box-shadow: 0 0 20px rgb(90 0 255);
+  border-radius: 50%;
+  opacity: 0;
+  animation: border_appears 2.5s forwards;
+  animation-delay: 9s;
+}
+
+.border_current_face {
+  position: absolute;
+}
+
+.border_current_face::after {
+  position: absolute;
+  content: '';
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  box-shadow: 0 0 20px rgb(90 0 255);
+  -moz-box-shadow: 0 0 20px rgb(90 0 255);
+  -webkit-box-shadow: 0 0 20px rgb(90 0 255);
+  border-radius: 50%;
+  animation: border_dissapears 2.5s forwards;
+  animation-delay: 15s;
+}
+
+@keyframes border_appears {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes border_dissapears {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.kiss_right {
+  animation: kiss_right 5s forwards;
+  animation-delay: 11.5s;
+  z-index: 2;
+}
+
+.kiss_left {
+  animation: kiss_left 5s forwards;
+  animation-delay: 11.5s;
+  z-index: 2;
+}
+
+@keyframes kiss_right {
+  50% {
+    transform: translate(10vh);
+    top: 10%;
+    scale: 140%;
+  }
+
+  80% {
+    transform: translate(10vh);
+    top: 10%;
+    scale: 140%;
+  }
+}
+
+@keyframes kiss_left {
+  50% {
+    transform: translate(-10vh);
+    top: 10%;
+    scale: 140%;
+  }
+
+  80% {
+    transform: translate(-10vh);
+    top: 10%;
+    scale: 140%;
+  }
+}
+
+.kiss_left::before {
+  position: absolute;
+  content: '';
+  width: 150px;
+  height: 150px;
+  background: rgba(253, 38, 102, 0.938);
+  border-radius: 50%;
+  animation: dissapear 4.5s;
+  animation-delay: 14s;
+  opacity: 0;
+}
+
+@keyframes dissapear {
+  65% {
+    opacity: .6;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .face,
+  .border_new_face::after,
+  .border_current_face::after,
+  .kiss_left::before {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .face,
+  .border_new_face::after,
+  .border_current_face::after,
+  .kiss_left::before {
+    width: 120px;
+    height: 120px;
+  }
+}

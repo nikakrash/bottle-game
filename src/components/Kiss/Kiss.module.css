@@ -1,0 +1,50 @@
+.kiss {
+  width: 100px;
+  height: 100px;
+  background: url('../../images/kiss.png');
+  background-size: contain;
+  position: absolute;
+  top: calc(25% - 50px);
+  left: calc(67% - 50px);
+  z-index: 2;
+  animation: kiss 2s;
+  animation-delay: 13.5s;
+  scale: 0%;
+}
+
+@keyframes kiss {
+  50% {
+    top: calc(12% - 50px);
+    left: calc(50% - 50px);
+    scale: 120%;
+  }
+
+  80% {
+    top: calc(25% - 50px);
+    left: calc(35% - 50px);
+    scale: 100%;
+  }
+
+  100% {
+    top: calc(25% - 50px);
+    left: calc(35% - 50px);
+    scale: 100%;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  @keyframes kiss {
+    50% {
+      top: calc(15% - 50px);
+      left: calc(50% - 50px);
+      scale: 120%;
+    }
+
+    100% {
+      top: calc(22% - 50px);
+      left: calc(40% - 50px);
+      scale: 100%;
+    }
+  }
+}

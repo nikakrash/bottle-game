@@ -1,0 +1,170 @@
+.bottle {
+  width: 50px;
+  height: 150px;
+  background: url('../../images/bottle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 25px);
+  cursor: pointer;
+}
+
+.rotate-to-1 {
+  animation: 4s rotate-1 forwards cubic-bezier(.32,.32,0,1);
+  animation-delay: 4.8s;
+}
+
+.rotate-to-2 {
+  animation: 4s rotate-2 forwards cubic-bezier(.32,.32,0,1);
+  animation-delay: 4.8s;
+}
+
+.rotate-to-3 {
+  animation: 4s rotate-3 forwards cubic-bezier(.32,.32,0,1);
+  animation-delay: 4.8s;
+}
+
+.rotate-to-4 {
+  animation: 4s rotate-4 forwards cubic-bezier(.32,.32,0,1);
+  animation-delay: 4.8s;
+}
+
+.rotate-to-5 {
+  animation: 4s rotate-5 forwards cubic-bezier(.32,.32,0,1);
+  animation-delay: 4.8s;
+}
+
+.rotate-to-6 {
+  animation: 4s rotate-6 forwards cubic-bezier(.32,.32,0,1);
+  animation-delay: 4.8s;
+}
+
+.rotate-to-7 {
+  animation: 4s rotate-7 forwards cubic-bezier(.32,.32,0,1);
+  animation-delay: 4.8s;
+}
+
+.rotate-to-8 {
+  animation: 4s rotate-8 forwards cubic-bezier(.32,.32,0,1);
+  animation-delay: 4.8s;
+}
+
+.rotate-to-9 {
+  animation: 4s rotate-9 forwards cubic-bezier(.32,.32,0,1);
+  animation-delay: 4.8s;
+}
+
+.rotate-to-10 {
+  animation: 4s rotate-10 forwards cubic-bezier(.32,.32,0,1);
+  animation-delay: 4.8s;
+}
+
+@keyframes rotate-1 {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(1893deg)
+  }
+}
+
+@keyframes rotate-2 {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(1929deg)
+  }
+}
+
+@keyframes rotate-3 {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(1965deg)
+  }
+}
+
+@keyframes rotate-4 {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(2001deg)
+  }
+}
+
+@keyframes rotate-5 {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(2037deg)
+  }
+}
+
+@keyframes rotate-6 {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(2073deg)
+  }
+}
+
+@keyframes rotate-7 {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(2109deg)
+  }
+}
+
+@keyframes rotate-8 {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(2145deg)
+  }
+}
+
+@keyframes rotate-9 {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(2181deg)
+  }
+}
+
+@keyframes rotate-10 {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(2217deg)
+  }
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .bottle {
+    width: 30px;
+    height: 102px;
+    top: calc(50vw - 102px);
+    left: calc(50% - 15px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .bottle {
+    width: 36px;
+    height: 120px;
+    top: calc(50vh - 60px);
+    left: calc(50% - 18px);
+  }
+}

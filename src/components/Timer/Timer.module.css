@@ -1,0 +1,44 @@
+.timer div {
+  position: absolute;
+  left: calc(50% - 25px);
+  top: 40%;
+  font-size: 7rem;
+  color: #fdf855;
+}
+
+.timer div:nth-child(1) {
+  scale: 0%;
+  animation: scale-number 1.5s ease-in-out;
+}
+
+.timer div:nth-child(2) {
+  scale: 0%;
+  animation: scale-number 1.5s ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.timer div:nth-child(3) {
+  scale: 0%;
+  animation: scale-number 1.5s ease-in-out;
+  animation-delay: 3s;
+}
+
+.timer_display_none {
+  display: none;
+}
+
+@keyframes scale-number {
+  50% {
+    scale: 100%;
+  }
+  100% {
+    scale: 0%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .timer div  {
+    top: calc(50vw - 102px);
+    left: calc(50% - 15px);
+  }
+}
