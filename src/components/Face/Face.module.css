@@ -127,7 +127,7 @@
     scale: 140%;
   }
 
-  80% {
+  70% {
     transform: translate(10vh);
     top: 10%;
     scale: 140%;
@@ -141,7 +141,7 @@
     scale: 140%;
   }
 
-  80% {
+  70% {
     transform: translate(-10vh);
     top: 10%;
     scale: 140%;
@@ -155,7 +155,7 @@
   height: 150px;
   background: rgba(253, 38, 102, 0.938);
   border-radius: 50%;
-  animation: dissapear 4.5s;
+  animation: dissapear 3.5s;
   animation-delay: 14s;
   opacity: 0;
 }

@@ -7,7 +7,7 @@
   top: calc(25% - 50px);
   left: calc(67% - 50px);
   z-index: 2;
-  animation: kiss 2s;
+  animation: kiss 1.5s;
   animation-delay: 13.5s;
   scale: 0%;
 }
@@ -32,8 +32,23 @@
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  @keyframes kiss {
+    50% {
+      top: 75px;
+      left: calc(70% - 50px);
+      scale: 120%;
+    }
 
-@media screen and (min-width: 768px) and (max-width: 1280px) {
+    100% {
+      top: 75px;
+      left: calc(30% - 50px);
+      scale: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   @keyframes kiss {
     50% {
       top: calc(15% - 50px);
@@ -44,6 +59,22 @@
     100% {
       top: calc(22% - 50px);
       left: calc(40% - 50px);
+      scale: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  @keyframes kiss {
+    50% {
+      top: 100px;
+      left: calc(62% - 50px);
+      scale: 120%;
+    }
+
+    100% {
+      top: 100px;
+      left: calc(42% - 50px);
       scale: 100%;
     }
   }
